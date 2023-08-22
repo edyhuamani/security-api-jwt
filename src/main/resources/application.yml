@@ -1,10 +1,12 @@
+server:
+  port : 8081
 spring:
   application:
-    name: secuirity
+    name: api-security
   datasource:
       url: jdbc:postgresql://localhost:5432/jwt_security
-      username:
-      password:
+      username: postgres
+      password: 123456
       driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -12,6 +14,6 @@ spring:
     show-sql: true
     properties:
       hibernate:
-      format_sql: true
+        format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
