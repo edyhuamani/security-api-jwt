@@ -59,7 +59,7 @@ public class AuthenticationService {
             log.info("user "+user.toString());
             log.info("jwttoken "+jwtToken);
         }catch(Exception ex){
-            log.info(ex.getMess   age());
+            log.info(ex.getMessage());
 
 
         }
