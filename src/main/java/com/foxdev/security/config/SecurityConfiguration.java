@@ -1,6 +1,6 @@
 package com.foxdev.security.config;
 
-import com.foxdev.security.filter.JwtAuthenticationFilter;
+import com.foxdev.security.filter.JwtAuthenticationSecurityFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 
-    private final JwtAuthenticationFilter jwAuthFilter;
+    private final JwtAuthenticationSecurityFilter jwAuthFilter;
 
     private final AuthenticationProvider authenticationProvider;
 
